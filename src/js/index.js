@@ -1,5 +1,8 @@
-//theodinproject.com activities:
-//Number of sequence at index n
+/**
+ * Generates the value of fibonacci at index n
+ * @param {*} n
+ * @returns:
+ */
 const fibonacci = (n) => {
   if (n < 2) {
     return n;
@@ -7,13 +10,17 @@ const fibonacci = (n) => {
     return fibonacci(n - 1) + fibonacci(n - 2);
   }
 };
-//Enter a Fibonacci index(n)
+
+/**
+ *
+ * @param {*} n
+ * @returns
+ */
 const fibs = (n) => {
   let fibsArray = [];
-  for (let i = 0; i <= n; i++) {
-    fibsArray.push(fibonacci(i));
+  for (let i = 1; i <= n; i++) {
+    console.log(fibonacci(i));
   }
-  return fibsArray;
 };
 
 const fibsReccursion = (n) => {
@@ -29,14 +36,5 @@ const fibsReccursion = (n) => {
   }
 };
 
-//javascript.info activities:
-//task 1: sum all the numbers till the given one
-const sumTo = (number) => {
-  if (number == 1) {
-    return number;
-  } else {
-    return number + sumTo(number - 1);
-  }
-};
-
-console.log(sumTo(3));
+//execute functions here
+fibs(3);
