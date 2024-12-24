@@ -1,7 +1,7 @@
 /**
  * Generates the value of fibonacci at index n
- * @param {*} n
- * @returns:
+ * @param {*} n - index
+ * @returns {number} - Number at index n
  */
 const fibonacci = (n) => {
   if (n < 2) {
@@ -12,13 +12,13 @@ const fibonacci = (n) => {
 };
 
 /**
- *
+ * Generates an array with n elements, each from the fibonacci sequence.
  * @param {*} n
- * @returns
+ * @returns {Array} - Returns an array containing n elements from fibonacci sequence
  */
 const fibs = (n) => {
   let fibsArray = [];
-  for (let i = 1; i <= n; i++) {
+  for (let i = 0; i <= n; i++) {
     console.log(fibonacci(i));
   }
 };
