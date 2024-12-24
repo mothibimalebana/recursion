@@ -7,7 +7,6 @@ const fibonacci = (n) => {
     return fibonacci(n - 1) + fibonacci(n - 2);
   }
 };
-console.log(fibonacci(10));
 //Enter a Fibonacci index(n)
 const fibs = (n) => {
   let fibsArray = [];
@@ -29,12 +28,13 @@ const fibsReccursion = (n) => {
     return fibsArray;
   }
 };
-console.log(fibsReccursion(10));
 
 //javascript.info activities:
 //task 1: sum all the numbers till the given one
 const sumTo = (number) => {
   if (number == 1) {
-    console.log('one is returned');
+    return number;
   }
 };
+
+sumTo(1);
