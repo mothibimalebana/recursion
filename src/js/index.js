@@ -17,10 +17,11 @@ const fibonacci = (n) => {
  * @returns {Array} - Returns an array containing n elements from fibonacci sequence
  */
 const fibs = (n) => {
-  let fibsArray = [];
-  for (let i = 0; i <= n; i++) {
-    console.log(fibonacci(i));
+  let fibsArray = []; //array containing fibonacci sequence
+  for (let i = 0; i < n; i++) {
+    fibsArray.push(fibonacci(i));
   }
+  return fibsArray;
 };
 
 const fibsReccursion = (n) => {
@@ -37,4 +38,4 @@ const fibsReccursion = (n) => {
 };
 
 //execute functions here
-fibs(3);
+console.log(fibs(8));
