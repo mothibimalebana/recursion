@@ -1,3 +1,4 @@
+//theodinproject.com activities:
 //Number of sequence at index n
 const fibonacci = (n) => {
   if (n < 2) {
@@ -16,4 +17,24 @@ const fibs = (n) => {
   return fibsArray;
 };
 
-console.log(fibs(10));
+const fibsReccursion = (n) => {
+  //index of iteration
+  const i = 0;
+  //fibonacci array
+  let fibsArray = [];
+  if (n == 0) {
+    return fibsArray;
+  } else {
+    fibsArray.push(fibonacci(n - 1));
+    return fibsArray;
+  }
+};
+console.log(fibsReccursion(10));
+
+//javascript.info activities:
+//task 1: sum all the numbers till the given one
+const sumTo = (number) => {
+  if (number == 1) {
+    console.log('one is returned');
+  }
+};
