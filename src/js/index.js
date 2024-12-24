@@ -34,7 +34,9 @@ const fibsReccursion = (n) => {
 const sumTo = (number) => {
   if (number == 1) {
     return number;
+  } else {
+    return number + sumTo(number - 1);
   }
 };
 
-sumTo(1);
+console.log(sumTo(3));
