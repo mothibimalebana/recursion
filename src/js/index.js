@@ -1,6 +1,6 @@
 /**
  * Generates the value of fibonacci at index n
- * @param {*} n - index
+ * @param {number} n - index
  * @returns {number} - Number at index n
  */
 const fibonacci = (n) => {
@@ -13,7 +13,7 @@ const fibonacci = (n) => {
 
 /**
  * Generates an array with n elements, each from the fibonacci sequence.
- * @param {*} n
+ * @param {number} n
  * @returns {Array} - Returns an array containing n elements from fibonacci sequence
  */
 const fibs = (n) => {
@@ -24,18 +24,22 @@ const fibs = (n) => {
   return fibsArray;
 };
 
-const fibsReccursion = (n) => {
-  //index of iteration
-  const i = 0;
+/**
+ * Responds with an array with n elements of fibonacci sequence
+ * @param {number} n - index of fibonacci sequence
+ * @returns {Array} - Returns an array containing n elemenets from fibonacci sequence
+ */
+const fibsRec = (n) => {
   //fibonacci array
-  let fibsArray = [];
-  if (n == 0) {
-    return fibsArray;
+  let fibsRecArray = []; //array containing fibonacci sequence
+
+  if (n <= 0) {
+    return fibsRecArray;
   } else {
-    fibsArray.push(fibonacci(n - 1));
-    return fibsArray;
+    fibsRec(n - 1);
   }
 };
 
 //execute functions here
-console.log(fibs(8));
+console.log(fibs(3));
+console.log(fibsRec(3));
