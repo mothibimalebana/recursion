@@ -30,14 +30,15 @@ const fibs = (n) => {
  * @returns {Array} - Returns an array containing n elemenets from fibonacci sequence
  */
 let fibsRecArray = []; //array containing fibonacci sequence
+let i = 0;
 
 const fibsRec = (n) => {
   //fibonacci array
-
-  if (n <= 0) {
+  if (n == 0) {
     return;
   } else {
-    fibsRecArray.push(fibonacci(n - 1));
+    fibsRecArray.push(fibonacci(i));
+    i++;
     fibsRec(n - 1);
   }
   return fibsRecArray;
